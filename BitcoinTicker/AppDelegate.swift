@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  BitcoinTicker
 //
-//  Created by Angela Yu on 23/01/2016.
+//  Created by Shrey Khetrapal on 20/08/2018.
 //  Copyright © 2016 London App Brewery. All rights reserved.
 //
 
