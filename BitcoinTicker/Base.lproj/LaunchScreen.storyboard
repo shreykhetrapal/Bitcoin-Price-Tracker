@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,25 +18,32 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ut3-lb-CLh"/>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LABLOGONewRound2" translatesAutoresizingMaskIntoConstraints="NO" id="cRf-A8-kXI">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="6Bj-Z0-djT"/>
-                                    <constraint firstAttribute="height" constant="300" id="LUW-S9-dh2"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ut3-lb-CLh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin Tracker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KZ-lL-Dij">
+                                <rect key="frame" x="70" y="343.66666666666669" width="274" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="5OL-rL-DJ7"/>
+                                    <constraint firstAttribute="height" constant="49" id="dCE-Qj-fEw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ut3-lb-CLh" secondAttribute="bottom" id="EaZ-t1-8qS"/>
                             <constraint firstItem="ut3-lb-CLh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="LEJ-T6-PRl"/>
+                            <constraint firstItem="4KZ-lL-Dij" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MGW-Qv-RQ9"/>
                             <constraint firstAttribute="trailing" secondItem="ut3-lb-CLh" secondAttribute="trailing" id="ZbK-KE-6nS"/>
                             <constraint firstItem="ut3-lb-CLh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lhc-nx-PXZ"/>
-                            <constraint firstItem="cRf-A8-kXI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wvw-lj-YWp"/>
-                            <constraint firstItem="cRf-A8-kXI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xej-4h-COX"/>
+                            <constraint firstItem="4KZ-lL-Dij" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="pqa-zR-rug"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -42,7 +53,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LABLOGONewRound2" width="250" height="250"/>
         <image name="background" width="596" height="842"/>
     </resources>
 </document>
